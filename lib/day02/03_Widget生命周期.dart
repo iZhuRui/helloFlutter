@@ -23,42 +23,14 @@ class ZRHomepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ZRHomeDemo();
-  }
-}
-
-class ZRHomeDemo extends StatefulWidget {
-  const ZRHomeDemo({Key key}) : super(key: key);
-
-  @override
-  _ZRHomeDemoState createState() => _ZRHomeDemoState();
-}
-
-class _ZRHomeDemoState extends State<ZRHomeDemo> {
-
-  List<Widget> widgets = [ZRHomepageContent()];
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('title'),
+        title: Text('电影列表'),
       ),
-      body: Column(
-        children: widgets,
-      ),
-      floatingActionButton: RaisedButton(
-        child: Icon(Icons.add),
-        onPressed: (){
-          setState(() {
-            widgets.insert(0, Text('hello world'));
-          });
-        },
-      ),
+      body: ZRHomepageContent(),
     );
   }
 }
-
 
 /**
  * 将build出来的widget抽取到一个单独的widget中：option+command+w
