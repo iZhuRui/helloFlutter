@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
 
+/**
+ * option+cmd+b可查看有哪些实现类
+ */
+
+/**
+ * 必传参数和@required：必传参数不传就会报错（编译不通过），@required编译可以通过，但是会报警告
+ */
+
 class TextRichDemo extends StatelessWidget {
   const TextRichDemo({
     Key key,
