@@ -15,23 +15,25 @@ class TextRichDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text.rich(
-        TextSpan(
-          // text: 'hello world',
-          // style: TextStyle(
-          //   fontSize: 30,
-          //   color: Colors.amber
-          // )
+    return Text.rich(TextSpan(
+        // text: 'hello world',
+        // style: TextStyle(
+        //   fontSize: 30,
+        //   color: Colors.amber
+        // )
 
-            children: [
-              TextSpan(text: 'hello world', style: TextStyle(fontSize: 30, color: Colors.red)),
-              TextSpan(text: 'hello flutter', style: TextStyle(fontSize: 30, color: Colors.green)),
-              WidgetSpan(child: Icon(Icons.favorite, color: Colors.red)),
-              TextSpan(text: 'hello dart', style: TextStyle(fontSize: 30, color: Colors.blue)),
-            ]
-
-        )
-    );
+        children: [
+          TextSpan(
+              text: 'hello world',
+              style: TextStyle(fontSize: 30, color: Colors.red)),
+          TextSpan(
+              text: 'hello flutter',
+              style: TextStyle(fontSize: 30, color: Colors.green)),
+          WidgetSpan(child: Icon(Icons.favorite, color: Colors.red)),
+          TextSpan(
+              text: 'hello dart',
+              style: TextStyle(fontSize: 30, color: Colors.blue)),
+        ]));
   }
 }
 
@@ -42,7 +44,6 @@ class TextDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     /**
      * Text这个widget不是最终的可渲染组件；Text中的build方法，返回的是RichText可 渲染的富文本
      */
