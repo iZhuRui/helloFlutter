@@ -70,7 +70,7 @@ class TextFieldDemo extends StatelessWidget {
                   print('username:$username password:$password');
                 },
                 child: Text(
-                  '登 录',
+                  '登 录 1',
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
                 color: Colors.blue,
